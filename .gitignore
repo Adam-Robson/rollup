@@ -1,0 +1,26 @@
+# A Git ignore file
+
+# Build / Bundle
+/dist
+/build
+
+# Coverage
+/coverage
+
+# Dependencies
+/node_modules
+
+# Environment Variables
+.env
+.env.local
+.env.example
+
+# Logs
+logs
+*.log
+
+# Miscellaneous
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
