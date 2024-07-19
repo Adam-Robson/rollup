@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karla:700|karla:400');
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #353a47;
+    --background: #eaebed;
+    --primary: #716260;
+    --secondary: #ffefd3;
+    --accent: #f3fae1;
+    --complement: #b9becbff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #eaebedff;
+    --background: #353a47ff;
+    --primary: #9f908eff;
+    --secondary: #ffefd3ff;
+    --accent: #f3fae1;
+    --complement: #b9becbff;
+  }
+}
+
+:root {
+--gradient-top: linear-gradient(0deg, var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+--gradient-right: linear-gradient(90deg, var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+--gradient-bottom: linear-gradient(180deg, var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+--gradient-left: linear-gradient(270deg, var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+--gradient-top-right: linear-gradient(45deg, var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+--gradient-bottom-right: linear-gradient(135deg, var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+--gradient-top-left: linear-gradient(225deg, var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+--gradient-bottom-left: linear-gradient(315deg, var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+--gradient-radial: radial-gradient(var(--primary), var(--secondary), var(--secondary), var(--accent), var(--complement));
+
+  font-size: 100%;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  font-family: 'karla';
+  font-weight: 400;
+  width: 100dvw;
+  min-height: 100dvh;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Karla';
+  font-weight: 700;
+}
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+button {
+  color: var(--text);
+  background-color: var(--background);
+  cursor: pointer;
+  padding: 0.36rem 0.82rem;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 0.32rem;
+  border-color: var(--text);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+button:hover {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
