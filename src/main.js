@@ -1,3 +1,3 @@
-import update from './update.js';
+import update from './utils/update.js';
 
 update();
