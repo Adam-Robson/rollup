@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="a list of tazks">
+  <title>rollup tazk</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./styles/global.css" type="text/css">
+</head>
+<body>
+  <header>
+    <img src="/assets/favicon-1014.png" alt="Logo" width="150" height="150">
+    <h1>Rollup Tazks</h1>
+    <a href="sign-out-button" aria-label="sign-out-link">Sign-Out</a>
+  </header>
+
+  <main>
+    <div id="app">
+      <span class="time-now"></span>
+      <section class="task-list-container"></section>
+
+      <section class="add-task-controls">
+        <form action="/api/newTask" method="post" class="add-task-form">
+          <label for="task-input">Task</label>
+          <input type="text" id="add-task-input" name="add-task-input" placeholder="Add a new task">
+      
+          <label for="add-task-completed">Completed</label>
+          <input type="checkbox" name="add-task-completed" id="add-task-completed">
+      
+          <input type="submit" class="submit" value="Submit" />
+        </form> 
+    </section>
+
+    </div>
+  </main>
+  <script src="./dist/bundle.js" type="module"></script>
+</body>
+</html>
