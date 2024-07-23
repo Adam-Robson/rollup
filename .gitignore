@@ -21,6 +21,7 @@ logs
 
 # Miscellaneous
 .DS_Store
+.vscode
 
 # TypeScript
 *.tsbuildinfo
